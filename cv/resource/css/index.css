@@ -1,0 +1,35 @@
+* {
+  box-sizing : border-box ;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  border: 1px solid green;
+  padding: 25px;
+  text-align: center;
+}
+
+.profil ul {
+  text-align: center;
+}
+
+.corp {
+  margin: 5px;
+}
+
+.profil {
+  display: inline-block;
+  border: 1px solid blue;
+  padding: 10px;
+  margin-right: 5px;
+  width: 250px;
+  float: left;
+}
+
+.contenu {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 20px;
+  float: right;
+}
