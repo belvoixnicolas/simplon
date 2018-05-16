@@ -5,6 +5,7 @@
 }
 
 header {
+  background: url("resource/img/header.jpg");
   border: 1px solid green;
   padding: 25px;
   text-align: center;
@@ -31,5 +32,4 @@ header {
   display: inline-block;
   border: 1px solid red;
   padding: 20px;
-  float: right;
 }
