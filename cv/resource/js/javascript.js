@@ -1,3 +1,5 @@
+document.getElementById('contenu').style.visibility='hidden';
+
 var questionNom = prompt('Votre nom.');
 var questionPrenom = prompt('Votre prénom.');
 
@@ -10,7 +12,10 @@ if (nom == 'belvoix' && prenom == 'nicolas') {
   document.getElementById('lieu').innerHTML = ident[2] + ' ' + ident[3];
   document.getElementById('tel').innerHTML = ident[4];
   document.getElementById('mail').innerHTML = ident[5];
+  document.getElementById('contenu').style.visibility='visible';
 }
 else {
   alert('Les informations entrer ne sont pas référencer, le site ne s\'affichera pas comme il faut');
+  document.getElementById('corp').innerHTML = ' ';
+  document.getElementById('corp').style.visibility='hidden';
 }
