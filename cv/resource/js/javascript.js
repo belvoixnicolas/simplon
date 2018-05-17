@@ -1,5 +1,5 @@
-var questionNom = 'Belvoix'/*prompt('Votre nom.')*/;
-var questionPrenom = 'Nicolas'/*prompt('Votre prénom.')*/;
+var questionNom = prompt('Votre nom.');
+var questionPrenom = prompt('Votre prénom.');
 
 var nom = questionNom.toLowerCase();
 var prenom = questionPrenom.toLowerCase();

@@ -5,15 +5,12 @@
 }
 
 body {
-  background: url("../img/background.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/background.jpg") no-repeat;
   background-size: cover;
 }
 
 header {
   background: url("../img/header.png");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 5px 20px 2px hsl(0, 0%, 0%), inset 0px 0px 10px 2px hsl(0, 0%, 0%);
   padding: 25px;
@@ -33,43 +30,90 @@ header img {
 }
 
 .profil {
-  height: 30px;
-  margin: 20px;
-  padding: 10px;
-  background: hsl(0, 0%, 80%);
+  margin: 20px 20px 30px;
+  padding: 15px;
+  background: url("../img/header.png");
   border: 1px solid hsl(0, 0%, 0%);
   border-radius: 5px;
   text-align: center;
-  box-shadow: inset 0px 0px 5px 1px hsl(0, 0%, 5%);
-  transition: .5s;
-}
-
-.profil:hover {
-  box-shadow: inset 0px 0px 5px 1px hsl(0, 0%, 5%), -5px 5px 5px 1px hsl(0, 0%, 5%);
+  box-shadow: inset 0px 0px 5px 1px hsl(0, 0%, 5%), 0px 5px 1px 0px hsl(0, 0%, 5%);
 }
 
 .profil ul li {
   display: inline-block;
-  margin: 5px 10px;
+  margin: 10px 10px;
 }
 
 .profil ul li a {
   padding: 5px;
   border: 1px solid hsla(0, 0%, 70%, 1);
   border-radius: 5px;
-  font-family: 'Inconsolata', monospace;
+  font: 15px 'Inconsolata', monospace;
   color: hsl(0, 0%, 0%);
-  font-size: 15px;
   text-decoration: none;
   transition: .5s;
 }
 
 .profil ul li a:hover {
   border: 1px solid hsl(0, 0%, 0%);
-  box-shadow: -3px 5px 5px 1px hsl(0, 0%, 5%);
+  box-shadow: 0px 5px 1px 0px hsl(0, 0%, 5%);
   transition: .5s;
 }
 
+.profil ul li a:active {
+  box-shadow: inset 0px 0px 5px 1px hsl(0, 0%, 5%);
+}
+
 .contenu {
-  border: 1px solid red;
+  background: url("../img/paper.png");
+  margin: 0 50px 50px;
+  padding: 20px;
+  box-shadow: 0px 0px 1px 1px hsl(0, 0%, 50%);
+}
+
+.contenu section h2 {
+  margin: 0px auto 30px;
+  font: 30px 'Itim', cursive;
+  color: hsl(0, 97%, 43%);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contenu section table {
+  border: 2px solid hsl(0, 0%, 25%);
+  border-spacing: 0px;
+  margin: 20px auto;
+  padding: 0px;
+  width: 70%;
+}
+
+.contenu section table td {
+  border: 2px solid hsl(0, 0%, 25%);
+  padding: 15px;
+}
+
+.contenu section table td, .contenu section table a, .contenu section li {
+  font: 20px 'Itim', cursive;
+  letter-spacing: 3px;
+  color: hsl(234, 87%, 22%);
+}
+
+.centrer {
+  text-align: center;
+}
+
+.loisir div {
+  text-align: center;
+}
+
+.contenu li {
+  list-style-type: none;
+}
+
+#crayon {
+  transform: rotate(136deg);
+  width: 300px;
+  position: fixed;
+  top: 300px;
+  right: -120px;
 }
