@@ -16,4 +16,6 @@ if (nom == 'belvoix' && prenom == 'nicolas') {
 }
 else {
   alert('Les informations entrer ne sont pas référencer, le site ne s\'affichera pas comme il faut');
+  document.getElementById('corp').innerHTML = ' ';
+  document.getElementById('corp').style.visibility='hidden';
 }

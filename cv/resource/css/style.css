@@ -94,6 +94,7 @@ header img {
 
 .contenu section table td, .contenu section table a, .contenu section li {
   font: 20px 'Itim', cursive;
+  text-decoration: none;
   letter-spacing: 3px;
   color: hsl(234, 87%, 22%);
 }
@@ -111,13 +112,14 @@ header img {
 }
 
 #crayon {
-  transform: rotate(136deg);
-  width: 300px;
+  transform: rotate(90deg);
+  width: 400px;
   position: fixed;
-  top: 300px;
-  right: -120px;
+  top: 350px;
+  right: -150px;
 }
 
 .contenu a:hover {
   color: hsl(120, 91%, 35%);
+  text-decoration: none;
 }
