@@ -1,6 +1,51 @@
-.panel {
+body {
+  background: blue;
+}
+
+header {
+  background: red;
+  margin-top: 5px;
   border: 1px solid black;
-  margin: 10px auto;
-  border-radius: 5px;
-  background-color: grey;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav {
+  background: green;
+  border: 1px solid black;
+}
+
+nav ul {
+  margin-top: 30px;
+}
+
+nav ul li {
+  margin: 5px;
+  list-style: none;
+}
+
+.contenu {
+  background: yellow;
+  border: 1px solid black;
+}
+
+.contenu p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.galerie {
+  padding-left: 10%;
+}
+
+.galerie img {
+  margin: 5px;
+}
+
+footer {
+  background: red;
+  margin-bottom: 5px;
+  border: 1px solid black;
 }
