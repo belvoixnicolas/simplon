@@ -5,14 +5,15 @@
 }
 
 body {
-  background: url("../img/background.jpg") no-repeat;
+  background: #471C0B url("../img/background.jpg")  no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 header {
   background: url("../img/header.png");
   background-size: cover;
-  box-shadow: 0px 5px 20px 2px hsl(0, 0%, 0%), inset 0px 0px 10px 2px hsl(0, 0%, 0%);
+  box-shadow: 0px 5px 20px 2px #000000, inset 0px 0px 10px 2px #000000;
   padding: 25px;
   text-align: center;
 }
@@ -24,7 +25,7 @@ header img {
 .corp {
   width: 95%;
   margin: 25px auto;
-  border: 1px solid hsl(0, 0%, 0%);
+  border: 1px solid #000000;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 1px hsl(0, 0%, 5%), inset 0px 0px 10px 4px hsl(0, 0%, 5%);
 }
@@ -122,4 +123,81 @@ header img {
 .contenu a:hover {
   color: hsl(120, 91%, 35%);
   text-decoration: none;
+}
+
+/* test */
+
+#truc {
+  position: fixed;
+  top: 15%;
+  width: 100%;
+}
+
+#truc section {
+  background: hsl(0, 0%, 100%);
+  width: 250px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 70px 2px hsl(0, 0%, 0%), inset 0px 0px 10px 2px hsl(0, 0%, 83%);
+  text-align: center;
+}
+
+#truc img {
+  width: 150px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 3px hsl(0, 0%, 83%);
+  filter: saturate(0%);
+  transition: .8s;
+}
+
+#truc img:hover {
+  box-shadow: 0px 0px 10px 5px hsl(0, 0%, 50%);
+}
+
+#truc h6 {
+  margin-top: 20px;
+  font: 25px 'Inconsolata', monospace;
+  font-weight: bold;
+}
+
+#truc p {
+  color: hsl(0, 0%, 50%);
+  font: 20px 'Inconsolata', monospace;
+}
+
+#connect {
+  display: none;
+  padding: 20px;
+}
+
+#truc input {
+  margin: 0 auto 10px;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 1px 1px hsl(0, 0%, 83%);
+  text-align: center;
+}
+
+#truc input:focus {
+  outline: none;
+}
+
+#connect button {
+  display: block;
+  margin: auto;
+  padding: 2px 10px;
+  background: hsl(0, 0%, 83%);
+  border-radius: 12px;
+  border: 1px solid hsl(0, 0%, 83%);
+  box-shadow: inset 0px -3px 10px 0px hsl(0, 0%, 0%);
+}
+
+#truc button:active {
+  box-shadow: inset 0px 3px 10px 0px hsl(0, 0%, 0%);
+}
+
+#truc button:focus {
+  outline: none;
 }
