@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+  <html lang="fr">
+    <head>
+      <title>CV</title>
+      <meta charset="UTF-8">
+      <meta charset="ISO-8859-1" />
+      <meta name="theme-color" content="red">
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+
+      <form class="cantact" action="php/envoie.php" method="post">
+        <p><label for="monsieur">Mr. </label><input type="radio" name="sexe" value="Homme" id="monsieur" required> <label for="madame">M.</label><input type="radio" value="Femme" name="sexe" id="madame" required></p>
+        <p><label for="nom">Nom :</label><input type="text" name="nom" id="nom" required></p>
+        <p><label for="nom">Prenom :</label><input type="text" name="prenom" id="prenom" required></p>
+        <p>
+          <label for="age">Age :</label><select name="age" id="age" required>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+          </select>
+        </p>
+        <p><label for="nom">Adresse :</label><input type="text" name="adresse" id="adresse" required></p>
+        <p><label for="nom">Ville :</label><input type="text" name="ville" id="ville" required></p>
+        <p><label for="loisir">Loisir :</label><input type="text" name="loisir" id="loisir" required></p>
+        <p><label for="contenu">Autres :</label><textarea id="contenu" name="contenu" rows="8" cols="80" required></textarea></p>
+        <p><button type="submit">Send</button></p>
+      </form>
+
+    </body>
+  </html>

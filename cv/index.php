@@ -18,8 +18,10 @@
           <h6>Belvoix</h6>
           <p>Nicolas</p>
           <div id="connect">
-            <input id="mdp" type="password" />
-            <button type="button" onclick="ident()">connexion</button>
+            <form class="index.php" action="index.php" method="post" onsubmit="ident();">
+              <input id="mdp" type="password" />
+              <button type="button" onclick="ident()">connexion</button>
+            </form>
           </div>
         </section>
       </div>
