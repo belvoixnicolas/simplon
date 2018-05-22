@@ -14,8 +14,8 @@ function connect() {
 }
 
 function ident() {
-  var mdp /*.value */ = '23e3k23e3k' /* document.getElementById('mdp') */;
-  if (mdp == '23e3k23e3k') {
+  var mdp = document.getElementById('mdp');
+  if (mdp.value == '23e3k23e3k') {
     var ident = ['Belvoix', 'Nicolas', '57 Rue Voltaire', 'Charleville-Mézières (08000)', '07.82.02.13.27', 'belvoixnicolas1997@gmail.com'];
     document.getElementById('nom_prenom').innerHTML = ident[0] + ' ' + ident[1];
     document.getElementById('corp').style.display ='block';
