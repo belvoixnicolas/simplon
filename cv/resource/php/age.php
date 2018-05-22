@@ -1,15 +1,15 @@
 <?php
-  $jour = '01';
-  $mois = '06';
-  $an = '1980';
+  $jour = '03';
+  $mois = '07';
+  $an = '1997';
 
-  $truc = $mois . $jour;
+  $mois_jour = $mois . $jour;
 
-  if ($truc < 0522) {
-    echo 2018 - $an;
+  if ($mois_jour < date('md')) {
+    echo date('Y') - $an . ' ans';
   }
   else {
-    echo 2018 - $an -1;
+    echo date('Y') - $an -1 . ' ans';
   }
 
  ?>
