@@ -24,14 +24,14 @@
         </section>
       </div>
 
-      <header>
-        <img src="resource/img/logo.png" alt="Logo de Nicolas Belvoix" />
-      </header>
+      <!-- header -->
+      <?php include('resource/php/header.php'); ?>
 
       <div class="corp" id="corp">
         <div class="profil">
           <ul>
             <li><a href="https://www.facebook.com/metaliblue" target="_blank" id="nom_prenom">Nom Prénom</a></li>
+            <li><?php include('resource/Aphp/age.php');?></li>
             <li><a href="https://www.google.com/maps/place/57+Rue+Voltaire,+08000+Charleville-M%C3%A9zi%C3%A8res/@49.7654616,4.7166227,17z/data=!3m1!4b1!4m5!3m4!1s0x47ea0e043ee70b2b:0x49184087a8d55b0a!8m2!3d49.7654616!4d4.7188167" target="_blank" id="lieu">Adress et Ville</a></li>
             <li><a href="tel:+33782021327" id="tel">Numéro de téléphone</a></li>
             <li><a href="mailto:belvoixnicolas1997@gmail.com" id="mail">Mail</a></li>
