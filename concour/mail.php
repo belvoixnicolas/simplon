@@ -6,7 +6,7 @@
     <meta name="theme-color" content="red">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
   </head>
   <body>
     <header><img src="img/logo.png" alt="logo"></header>
@@ -47,7 +47,7 @@
       mail('belvoixnicolas1997@gmail.com', 'mail', $message2);
     }
     else {
-      include('index.html');
+      echo '<h1>Erreur</h1>';
     }
     ?>
 
