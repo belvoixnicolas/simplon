@@ -1,0 +1,53 @@
+* {
+  box-sizing : border-box ;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #471C0B url("../img/background.jpg")  no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+header {
+  background: url("../img/header.png");
+  background-size: cover;
+  box-shadow: 0px 5px 20px 2px #000000, inset 0px 0px 10px 2px #000000;
+  padding: 25px;
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+}
+
+.corp {
+  box-shadow: inset 0px 0px 5px 1px hsl(0, 0%, 5%), 0px 0px 10px 4px hsl(0, 0%, 5%);
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px;
+}
+
+table {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px 1px hsl(0, 0%, 5%), 0px 0px 10px 4px hsl(0, 0%, 5%);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+span {
+  color: red;
+}
+
+#droite {
+  text-align: right;
+}

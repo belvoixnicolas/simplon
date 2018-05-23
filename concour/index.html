@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+  <html lang="fr">
+    <head>
+      <title>Formulaire</title>
+      <meta charset="UTF-8">
+      <meta charset="ISO-8859-1" />
+      <meta name="theme-color" content="red">
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+      <header><img src="img/logo.png" alt="logo"></header>
+
+      <form action="mail.php" onsubmit="return valid ()" method="post">
+        <table>
+          <tr>
+            <td><label>Titre<span>*</span> :</label></td>
+            <td><input type="radio" id="mm" name="titre" value="madame" required> <label for="mm">Mme. </label> <input type="radio" id="mr" name="titre" value="monsieur" required><label for="mr">Mr. </label></td>
+          </tr>
+          <tr>
+            <td><label for="prenom">Prénom<span>*</span> :</label></td>
+            <td><input type="text" id="prenom" name="prenom" required></td>
+          </tr>
+          <tr>
+            <td><label for="nom">Nom<span>*</span> :</label></td>
+            <td><input type="text" id="nom" name="nom" required></td>
+          </tr>
+          <tr>
+            <td><label for="mail">E-mail :</label></td>
+            <td><input type="email" id="mail" name="mail"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="checkbox" id="souvenir" name="souvenir"><label for="souvenir">Se souvenir de moi </label></td>
+          </tr>
+          <tr>
+            <td colspan="2" id="droite"><input type="submit" value="Envoyer" onclick="valid ()"></td>
+          </tr>
+      </table>
+      </form>
+
+      <script src="js/javascript.js"></script>
+    </body>
+  </html>

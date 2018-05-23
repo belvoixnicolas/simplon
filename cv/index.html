@@ -18,20 +18,13 @@
           <h6>Belvoix</h6>
           <p>Nicolas</p>
           <div id="connect">
-            <form class="index.php" action="index.php" method="post" onsubmit="ident();">
-              <input id="mdp" type="password" />
-              <button type="button" onclick="ident()">connexion</button>
+            <form class="fom" action="cv.php" method="post">
+              <input id="mdp" type="password" name="password" />
+              <button type="submit">connexion</button>
             </form>
           </div>
         </section>
       </div>
-
-      <!-- header -->
-      <?php include('resource/php/header.php'); ?>
-
-      <!-- corp -->
-      <?php include('resource/php/corp.php'); ?>
-
       <script src="resource/js/javascript.js"></script>
     </body>
 </html>
