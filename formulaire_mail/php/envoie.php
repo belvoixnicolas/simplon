@@ -9,12 +9,21 @@ if (isset($_POST['sexe']) && isset($_POST['nom']) && isset($_POST['prenom']) && 
   $loisir = (string) $_POST['loisir'];
   $contenu = (string) $_POST['contenu'];
 
-  $message = 'Sexe : ' . $sexe . '<br/>' . $nom . ' ' . $prenom . '<br/>Age : ' . $age . ' ans<br/>' . $adresse . '<br/>' . $ville . '<br/>Loisir : <br/>' . $loisir . '<br/>Text : <br/>' . $contenu;
+  $message =
+  'Sexe : ' . $sexe . '
+  ' . $nom . ' ' . $prenom . '
+  Age : ' . $age . ' ans
+  ' . $adresse . '
+  ' . $ville . '
+  Loisir :
+  ' . $loisir . '
+  Text :
+  ' . $contenu;
 
   mail('belvoixnicolas1997@gmail.com', 'mail', $message);
 }
 else {
-  echo "<h1>Les informations requise ne sont pas informer.";
+  echo "<h1>Les informations requise ne sont pas informer.</h1>";
   iclude('../index.html');
 }
 ?>
