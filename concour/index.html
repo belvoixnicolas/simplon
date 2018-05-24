@@ -11,33 +11,45 @@
     </head>
     <body>
       <header><img src="img/logo.png" alt="logo"></header>
+      <div class="corp">
+        <form action="mail.php"  method="post">
+          <div class="label droite">
+            <p>
+              <label>Titre<span>*</span> :</label>
+            </p>
+            <p>
+              <label for="prenom">Prénom<span>*</span> :</label>
+            </p>
+            <p>
+              <label for="nom">Nom<span>*</span> :</label>
+            </p>
+            <p>
+              <label for="mail">E-mail :</label>
+            </p>
+          </div>
 
-      <form action="mail.php" onsubmit="return valid ()" method="post">
-        <table>
-          <tr>
-            <td><label>Titre<span>*</span> :</label></td>
-            <td><input type="radio" id="mm" name="titre" value="madame" required> <label for="mm">Mme. </label> <input type="radio" id="mr" name="titre" value="monsieur" required><label for="mr">Mr. </label></td>
-          </tr>
-          <tr>
-            <td><label for="prenom">Prénom<span>*</span> :</label></td>
-            <td><input type="text" id="prenom" name="prenom" required></td>
-          </tr>
-          <tr>
-            <td><label for="nom">Nom<span>*</span> :</label></td>
-            <td><input type="text" id="nom" name="nom" required></td>
-          </tr>
-          <tr>
-            <td><label for="mail">E-mail :</label></td>
-            <td><input type="email" id="mail" name="mail"></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input type="checkbox" id="souvenir" name="souvenir"><label for="souvenir">Se souvenir de moi </label></td>
-          </tr>
-          <tr>
-            <td colspan="2" id="droite"><input type="submit" value="Envoyer" onclick="valid ()"></td>
-          </tr>
-      </table>
-      </form>
+          <div class="input">
+            <p>
+              <input type="radio" id="mm" name="titre" value="madame" required> <label for="mm">Mme. </label> <input type="radio" id="mr" name="titre" value="monsieur" required><label for="mr">Mr. </label>
+            </p>
+            <p>
+              <input type="text" id="prenom" name="prenom" required>
+            </p>
+            <p>
+              <input type="text" id="nom" name="nom" required>
+            </p>
+            <p>
+              <input type="email" id="mail" name="mail">
+            </p>
+          </div>
+          <p>
+            <input type="checkbox" id="souvenir" name="souvenir"><label for="souvenir">Se souvenir de moi </label>
+          </p>
+          <p class="droite">
+            <input type="submit" value="Envoyer" onclick="valid ()">
+          </p>
+        </form>
+      </div>
 
       <script src="js/javascript.js"></script>
     </body>
