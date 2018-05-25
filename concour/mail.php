@@ -22,10 +22,12 @@
         $souvenir = $_POST['souvenir'];
 
         if (isset($souvenir)) {
-          $souvenir = 'Se souvenir de moi';
+          $souvenir2 = 'Se souvenir de moi';
+          $souvenir = 1;
         }
         else {
-          $souvenir = 'Ne pas se souvenir de moi';
+          $souvenir2 = 'Ne pas se souvenir de moi';
+          $souvenir = 0;
         }
 
         $message =
@@ -34,16 +36,30 @@
         Prénom : ' . $prenom . '.<br/>
         Nom : ' . $nom . '.<br/>
         E-mail : ' . $mail . '.<br/>
-        ' . $souvenir . '.</p></div>';
+        ' . $souvenir2 . '.</p></div>';
 
         echo $message;
 
         $headers = 'Content-type: text/html; charset=UTF-8';
         mail('belvoixnicolas1997@gmail.com', 'mail', $message, $headers);
+
+
+        $link = mysqli_connect ("localhost","root","","test");
+
+        if (!$link) {
+          die("ERROR: Could not connect. " . mysqli_connect_error());
+        }
+
+        $sql = "INSERT INTO truc(titre, nom, prenom, mail, souvenir, date) VALUES ('$sexe', '$nom', '$prenom', '$mail', '$souvenir', NOW())";
+
+        mysqli_query($link, $sql);
+
+        mysqli_close($link);
       }
       else {
         echo '<h1>Erreur</h1>';
       }
+
       ?>
 
     </body>
