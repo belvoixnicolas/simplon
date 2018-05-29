@@ -12,8 +12,9 @@
     </head>
     <body>
       <?php
-        if ($_post['password'] == '23e3k23e3k') {
-          echo 'ok';
+        if ($_POST['password'] == '23e3k23e3k') {
+          include('resource/php/header.php');
+          include('resource/php/corp.php');
         }
         else {
           include('index.html');
