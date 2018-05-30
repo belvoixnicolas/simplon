@@ -19,12 +19,16 @@
           <p>Nicolas</p>
           <div id="connect">
             <form class="fom" action="cv.php" method="post">
-              <input id="mdp" type="password" name="password" />
+              <input type="date" name="date"/>
+              <!--<input type="number" name="jour" pattern=".{2,}" min="1" max="31" placeholder="jour" required/>
+              <input type="number" name="mois" pattern=".{2,}" min="1" max="12" placeholder="mois" required/>
+              <input type="number" name="annee" pattern=".{4,}" min="1900" max="3000" placeholder="année" required/>-->
+              <input id="mdp" type="password" name="password" placeholder="Mot de passe"/>
               <button type="submit">connexion</button>
             </form>
           </div>
         </section>
       </div>
-      <script src="resource/js/javascript.js"></script>
+      <script src="resource/js/connect.js"></script>
     </body>
 </html>

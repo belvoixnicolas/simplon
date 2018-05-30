@@ -135,3 +135,4 @@
     </section>
   </div>
 </div>
+<script src="resource/js/info.js"></script>
