@@ -12,11 +12,11 @@ header {
 }
 
 header h1 {
-  font-size: 3.1578947368421053em;
+  font-size: 3.15789474rem;
 }
 
 header p, section h2 {
-  font-size: 1.894736842105263em;
+  font-size: 1.89473684rem;
 }
 
 /* nav */
@@ -49,7 +49,7 @@ nav a {
   display: inline-block;
   height: 34px;
   padding: 13px 15px;
-  font-size: 1.1578947368421053em;
+  font-size: 1.15789474rem;
   text-decoration: none;
   color: white;
 }
@@ -69,7 +69,7 @@ h2 i {
 }
 
 section p, section span {
-  font-size: 0.8421052631578947em;
+  font-size: 0.84210526rem;
   font-weight: normal;
 }
 
@@ -97,7 +97,7 @@ figure img:hover {
 .galerie figcaption {
   margin-top: 10px;
   text-align: left;
-  font-size: 0.9473684210526315em;
+  font-size: 0.94736842rem;
   font-weight: bold;
 }
 
@@ -178,7 +178,7 @@ footer {
 
 footer a {
   color: white;
-  font-size: 40px;
+  font-size: 2.10526316rem;
   margin: 0px 15px;
 }
 
