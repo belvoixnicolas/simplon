@@ -1,23 +1,23 @@
 // EXO 2 //
-/*var firstNam = prompt('Votre prénom');
+var firstNam = prompt('Votre prénom');
 
-alert('Bonjour ' + firstNam + '.');*/
+alert('Bonjour ' + firstNam + '.');
 
 // EXO 3 //
-/*var prixHt = parseFloat(prompt('Prix HT'));
+var prixHt = parseFloat(prompt('Prix HT'));
 
 var prixTtc = prixHt + (prixHt / 100 * 20);
 
-alert(prixTtc);*/
+alert(prixTtc);
 
 // EXO 4 //
-/*var temperatureC = parseFloat(prompt('Température on °c'));
+var temperatureC = parseFloat(prompt('Température on °c'));
 var temperatureF = 32 + (temperatureC * 1.8);
 
-alert(temperatureF + '°F');*/
+alert(temperatureF + '°F');
 
 // EXO 5 //
-/*var monDiv = document.getElementsByTagName('div')[0];
+var monDiv = document.getElementsByTagName('div')[0];
 
 console.log(monDiv);
 
@@ -27,10 +27,10 @@ console.log(monDiv);
 
 monDiv.className = 'maClasse';
 
-console.log(monDiv);*/
+console.log(monDiv);
 
 // EXO 6 //
-/*var div = document.getElementsByTagName('div');
+var div = document.getElementsByTagName('div');
 console.log(div);
 div[0].id = "truc";
 
@@ -46,19 +46,19 @@ div[0].innerHTML = textDeux;
 div[1].innerHTML = textUn;
 
 div[0].style.textAlign = 'left';
-div[1].style.textAlign = 'right';*/
+div[1].style.textAlign = 'right';
 
 // EXO 7 //
-/*var mesDiv = document.getElementsByTagName('div');
+var mesDiv = document.getElementsByTagName('div');
 
 mesDiv[0].style.background = 'red';
 mesDiv[1].style.background = 'green';
 mesDiv[2].style.background = 'blue';
 
-document.getElementsByTagName('body')[0].style.display = 'flex';*/
+document.getElementsByTagName('body')[0].style.display = 'flex';
 
 // EXO 8 //
-/*function src() {
+function src() {
   console.log(document.getElementsByTagName('img')[0].src);
 }
 
@@ -91,7 +91,7 @@ function img() {
 
 var rota = 0;
 
-src();*/
+src();
 
 // EXO 9 //
 var textH1 = document.querySelector("h1").innerText;
@@ -109,13 +109,23 @@ document.querySelector("span").onmouseout = function(){
 var i = 0;
 var defaut = document.querySelector("span").innerHTML;
 document.querySelector("span").onclick = function(){var machin = setInterval(function(){
-  i++;
+  i = i + 5;
   document.querySelector("span").innerHTML = 'J\'me casse!';
   document.querySelector('h1').style.marginLeft = i + 'px';
-  if (i == window.innerWidth) {
+  if (i > window.innerWidth) {
     clearInterval(machin);
     i = 0;
     document.querySelector('span').innerHTML = defaut;
     document.querySelector('h1').style.marginLeft = '0px';
   }
-}, 100)};
+}, 1)};
+
+// EXO 10 //
+var text = ['Sa c\'est le text de la premié paragraphe.', 'Et sa c\'est le text du deuxième paragraphe.'];
+
+for (var i = 0; i < text.length; i++) {
+  document.getElementsByTagName('body')[0].innerHTML += '<p>' + text[i] + '</p>';
+
+  var paragraphe = document.getElementsByTagName('p')[i];
+  paragraphe.style = 'color: grey; font-size: 20px; text-align: center; background: rgba(15, 100, 50, .5);';
+}
