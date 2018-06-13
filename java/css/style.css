@@ -1,0 +1,17 @@
+div{
+	font-size:2em;
+	color:red;
+}
+
+img {
+	height: 300px;
+	border-radius: 50%;
+}
+
+h1{
+	text-align:center;
+}
+
+.maClasse {
+	background: red;
+}
