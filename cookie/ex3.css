@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+img {
+  width: 150px;
+}
+
+footer {
+  background: rgba(255, 255, 0, .5);
+  padding: 10px;
+}
+
+footer p {
+  text-align: center;
+}
