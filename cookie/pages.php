@@ -1,8 +1,3 @@
-<?php
-  setcookie('nom', 'Belvoix', time() + 365 * 24 * 3600);
-  setcookie('prenom', 'Nicolas', time() + 365 * 24 * 3600);
-  setcookie('age', '20', time() + 365 * 24 * 3600);
-?>
 <!DOCTYPE HTML>
   <html lang="fr">
     <head>
@@ -12,6 +7,10 @@
       <meta charset="ISO-8859-1" />
     </head>
     <body>
-      <p>Création de cookie. Clique <a href="pages.php">ici</a> pour voir.</p>
+      <?php
+        echo '<p>' . $_COOKIE['prenom'] . '</p>';
+        echo '<p>' . $_COOKIE['nom'] . '</p>';
+        echo '<p>' . $_COOKIE['age'] . 'ans</p>';
+      ?>
     </body>
   </html>
