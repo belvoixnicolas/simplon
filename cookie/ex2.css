@@ -1,0 +1,15 @@
+body, html {
+  margin: 0;
+}
+
+#cookie {
+  background: rgba(255, 255, 0, .5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+input {
+  float: right;
+  margin: 10px;
+}
